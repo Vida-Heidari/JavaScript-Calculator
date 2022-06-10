@@ -19,7 +19,34 @@ html {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
 
+body {
+  background: #100a1c;
+  background-image: radial-gradient(
+      50% 30% ellipse at center top,
+      #201e40 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
+  color: #6cacc5;
+
+  /* background: #6cacc5;
+  background-image: radial-gradient(
+      50% 30% ellipse at center top,
+      #d9fbfe 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(60% 50% ellipse at center bottom, #88cffa 0%, #6cacc5 100%);
+  background-attachment: fixed;
+  color: #100a1c; */
+
+  text-align: center;
+  padding: 5rem 0 2rem;
+}
+
+.dark--mode {
   background: #100a1c;
   background-image: radial-gradient(
       50% 30% ellipse at center top,
@@ -31,8 +58,14 @@ html {
   color: #6cacc5;
 }
 
-body {
-  color: #6cacc5;
-  text-align: center;
-  padding: 5rem 0 2rem;
+.light--mode {
+  background: #6cacc5;
+  background-image: radial-gradient(
+      50% 30% ellipse at center top,
+      #d9fbfe 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(60% 50% ellipse at center bottom, #88cffa 0%, #6cacc5 100%);
+  background-attachment: fixed;
+  color: #100a1c;
 }

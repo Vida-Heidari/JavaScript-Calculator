@@ -52,7 +52,7 @@ minusButton.addEventListener("click", () => {
   lastOperation = "minus";
   memory = Number(display.textContent);
   display.textContent = 0;
-  // display.textContent = minusButton.value;
+  // display.textContent = `${memory} - `;
 });
 
 //------------------- Plus Button

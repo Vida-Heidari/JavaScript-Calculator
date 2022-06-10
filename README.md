@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="./images/weCare demo.png" alt="Logo" width="700">
+    <img src="./images/Calculator demo.png" alt="Logo" width="700">
 
   <h3 align="center">.: JavaScript Calculator :.</h3>
 

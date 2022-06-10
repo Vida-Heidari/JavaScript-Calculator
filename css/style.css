@@ -8,51 +8,42 @@ h1 {
 }
 
 #main {
-  /* border: 2px solid red; */
   width: 90%;
   margin: 10px auto;
   max-width: 800px;
-  /* position: relative; */
 }
 
 #display {
   border: 1px solid #201e40;
   background-color: #100a1c;
+  color: #c97874;
   font-size: 48px;
   padding: 10px;
   text-align: right;
-  color: #c97874;
   margin-bottom: 1rem;
   border-radius: 1rem;
 }
 
+.light--mode #display {
+  border: 1px solid #88cffa;
+  background-color: #6cacc5;
+  color: #201e40;
+}
+
 .theme-toggler {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
   position: absolute;
   top: 30px;
   right: 30px;
-  color: #fff;
+  background: #fff;
   cursor: pointer;
   z-index: 1;
 }
 
-.theme-toggler.active {
-  color: #333;
-}
-
-.theme-toggler.active::before {
-  background-color: #fff;
-}
-
-.theme-toggler::before {
-  content: "";
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background-color: #333;
-  z-index: -1;
+.light--mode .theme-toggler {
+  background: #100a1c;
 }
 
 #buttons span {
@@ -62,16 +53,28 @@ h1 {
   font-weight: 300;
   padding: 10px;
   font-size: 32px;
+  background: rgba(42, 50, 113, 0.28);
+  color: #6cacc5;
   border: 1px solid #100a1c;
   cursor: pointer;
   transition-duration: 0.4s;
-  background: rgba(42, 50, 113, 0.28);
-  color: #6cacc5;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
 
+.light--mode #buttons span {
+  background: rgba(97, 192, 216, 0.5);
+  border: 1px solid #6cacc5;
+  color: #0f42a1;
+  color: #0a3f7a;
+}
+
 #buttons span:hover {
   background: #1e1c3d;
+}
+
+.light--mode #buttons span:hover {
+  background: rgb(97, 192, 216);
+  color: #100a1c;
 }
